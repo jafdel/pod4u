@@ -18,7 +18,11 @@ To ensure you have the correct environment to run pod4u, please complete the fol
 
 #### a) Install WSL with a chosen Linux distribution
 
-Open a terminal window (preferably PowerShell) and run:
+Open a terminal window (preferably PowerShell) and move to the directory where you intend to save pod4u by running:
+
+`cd C:\choose\your\path`
+
+Ideally this will not change again in this process. Now you can install your WSL environment. Run:
 
 `wsl --install -d <DistroName>`
 
@@ -44,11 +48,11 @@ If Java 25 is not installed on your machine, get it at [https://download.oracle.
 
 #### d) Set up JavaFX (OpenJFX)
 
-JavaFX is a technology on which pod4u is built, allowing your machine to run rich GUI applications in Java. It can be downloaded from [https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_windows-x64_bin-sdk.zip](https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_windows-x64_bin-sdk.zip). Note the location it is stored at as this will be needed later.
+JavaFX is a technology on which pod4u is built, allowing your machine to run rich GUI applications in Java. It can be downloaded from [https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_windows-x64_bin-sdk.zip](https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_windows-x64_bin-sdk.zip). Extract the archive and note the location it is saved to as this will be needed later.
 
 ### Step 3: Clone the repo
 
-To obtain a local copy of pod4u, stored in the directory you specified earlier, use:
+To obtain a local copy of pod4u, stored in the directory you specified in PowerShell earlier, use:
 
 `git clone https://github.com/jafdel/pod4u`
 
@@ -72,7 +76,7 @@ _**Please note:** This step may be unnecessary as keys have already been obtaine
 
 #### a) Set up Face++ account
 
-
+Go to https://console.faceplusplus.com/login and follow the instructions to create an account. Once signed in, there should be an 'Apps' option on the left-hand side, and 'API Keys' under it. On this page you will find the 'Get API Key' button, which will create a new key for you. Copy the API key and API secret into the `.env` file as values for the FACE_PLUS_API_KEY and FACE_PLUS_API_SECRET keys.
 
 #### b) Set up AcousticBrainz account
 
@@ -88,7 +92,7 @@ Back in PowerShell, within the same location you downloaded the repo to, launch 
 
 `.\pod4u.ps1 -DefaultDistro <DistroName> -Username <Username> -ModulePath <JFXModulePath>`
 
-DistroName is the name of your default distro, Username is the username you will use to log into the distro, and ModulePath is the directory where you saved the OpenJFX archive file.
+DistroName is the name of your default distro, Username is the username you will use to log into the distro, and ModulePath is the directory where you extracted the OpenJFX archive file.
 
 _**Please note:** This process will probably take a few hours to complete first time around as it involves self-hosting a copy of the MusicBrainz database in full._
 
