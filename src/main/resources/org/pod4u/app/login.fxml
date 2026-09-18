@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #dddd44; -fx-border-radius: 18px;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pod4u.app.Pod4UController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label fx:id="loginText" alignment="CENTER" text="Login to pod4u" textAlignment="CENTER" textFill="#013c03" wrapText="true">
+        <font>
+            <Font size="24.0" />
+        </font></Label>
+         <FlowPane prefWidth="200.0">
+            <children>
+                <Label fx:id="enterEmail" alignment="BASELINE_CENTER" pickOnBounds="false" snapToPixel="false" text="Email" textFill="#013c03">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+            <FlowPane.margin>
+               <Insets right="23.0" />
+            </FlowPane.margin>
+                </Label>
+                <TextField fx:id="loginEmail" alignment="BASELINE_LEFT">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </TextField>
+            </children>
+         </FlowPane>
+    <FlowPane prefWidth="200.0">
+        <children>
+            <Label fx:id="enterPassword" alignment="BASELINE_CENTER" pickOnBounds="false" snapToPixel="false" text="Password " textFill="#013c03">
+                <font>
+                    <Font size="11.0" />
+                </font>
+            </Label>
+            <PasswordField fx:id="loginPassword" alignment="BASELINE_LEFT">
+                <font>
+                    <Font size="11.0" />
+                </font>
+            </PasswordField>
+        </children>
+    </FlowPane>
+    <Button fx:id="btnGo" onAction="#onGoButtonClick" style="-fx-background-color: #00aa55; -fx-text-fill: #ffffff;" text="Go!" textAlignment="CENTER" />
+</VBox>

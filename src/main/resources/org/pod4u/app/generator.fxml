@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" minHeight="350.0" prefHeight="283.0" prefWidth="252.0" spacing="10.0" style="-fx-background-color: #dddd44; -fx-border-radius: 18px;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pod4u.app.Pod4UController">
+    <padding>
+        <Insets left="10.0" right="10.0" top="-10.0" />
+    </padding>
+    <Label fx:id="generatorText" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" style="maxWidth: 125%;" text="Generate a playlist" textAlignment="CENTER" textFill="#013c03" textOverrun="CLIP" wrapText="true">
+        <font>
+            <Font size="24.0" />
+        </font></Label>
+    <ComboBox fx:id="cbxDuration" prefWidth="150.0" promptText="Duration" onAction="#onDurationSelect">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:id="900000" fx:value="15 minutes" />
+                <String fx:id="1800000" fx:value="30 minutes" />
+                <String fx:id="2700000" fx:value="45 minutes" />
+                <String fx:id="3600000" fx:value="1 hour" />
+                <String fx:id="4500000" fx:value="1 hour 15 minutes" />
+                <String fx:id="5400000" fx:value="1 hour 30 minutes" />
+                <String fx:id="6300000" fx:value="1 hour 45 minutes" />
+                <String fx:id="7200000" fx:value="2 hours" />
+                <String fx:id="8100000" fx:value="2 hours 15 minutes" />
+                <String fx:id="9000000" fx:value="2 hours 30 minutes" />
+                <String fx:id="9900000" fx:value="2 hours 45 minutes" />
+                <String fx:id="10800000" fx:value="3 hours" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Button fx:id="btnCamera" disable="true" onAction="#onCameraButtonClick" prefWidth="100.0" style="-fx-background-color: #00aa55; -fx-text-fill: #ffffff;" text="Use camera" textAlignment="CENTER" />
+    <Button fx:id="btnUpload" disable="true" onAction="#onUploadButtonClick" prefWidth="100.0" style="-fx-background-color: #00aa55; -fx-text-fill: #ffffff;" text="Upload photo" textAlignment="CENTER" />
+    <Button fx:id="btnSliders" disable="true" onAction="#onSliderButtonClick" prefWidth="100.0" style="-fx-background-color: #00aa55; -fx-text-fill: #ffffff;" text="Use sliders" textAlignment="CENTER" />
+    <Button fx:id="btnRandom" disable="true" onAction="#onRandomButtonClick" prefWidth="100.0" style="-fx-background-color: #00aa55; -fx-text-fill: #ffffff;" text="Randomise!" textAlignment="CENTER" />
+    <Button fx:id="btnLoad" disable="true" onAction="#onLoadButtonClick" prefWidth="100.0" style="-fx-background-color: #00aa55; -fx-text-fill: #ffffff;" text="Load playlist" textAlignment="CENTER" />
+</VBox>

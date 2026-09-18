@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #dddd44; -fx-border-radius: 18px;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pod4u.app.Pod4UController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <Label fx:id="registerText" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" style="maxWidth: 125%;" text="Register for pod4u" textAlignment="CENTER" textFill="#013c03" textOverrun="CLIP">
+        <font>
+            <Font size="24.0" />
+        </font></Label>
+    <FlowPane prefWidth="200.0">
+        <children>
+            <Label fx:id="enterForename" alignment="BASELINE_CENTER" pickOnBounds="false" snapToPixel="false" text="First name" textFill="#013c03">
+                <font>
+                    <Font size="11.0" />
+                </font>
+                <FlowPane.margin>
+                    <Insets right="5.0" />
+                </FlowPane.margin>
+            </Label>
+            <TextField fx:id="registerForename" alignment="BASELINE_LEFT" onAction="#onTextEdited" onKeyTyped="#onTextEdited" snapToPixel="false">
+                <font>
+                    <Font size="11.0" />
+                </font>
+            </TextField>
+        </children>
+    </FlowPane>
+    <FlowPane prefWidth="200.0">
+        <children>
+            <Label fx:id="enterSurname" alignment="BASELINE_CENTER" pickOnBounds="false" snapToPixel="false" text="Last name" textFill="#013c03">
+                <font>
+                    <Font size="11.0" />
+                </font>
+                <FlowPane.margin>
+                    <Insets right="6.0" />
+                </FlowPane.margin>
+            </Label>
+            <TextField fx:id="registerSurname" alignment="BASELINE_LEFT" onAction="#onTextEdited" onKeyTyped="#onTextEdited">
+                <font>
+                    <Font size="11.0" />
+                </font>
+            </TextField>
+        </children>
+    </FlowPane>
+         <FlowPane prefWidth="200.0">
+            <children>
+                <Label fx:id="enterEmail" alignment="BASELINE_CENTER" pickOnBounds="false" snapToPixel="false" text="Email" textFill="#013c03">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+            <FlowPane.margin>
+               <Insets right="29.0" />
+            </FlowPane.margin>
+                </Label>
+                <TextField fx:id="registerEmail" alignment="BASELINE_LEFT" onAction="#onTextEdited" onKeyTyped="#onTextEdited">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </TextField>
+            </children>
+         </FlowPane>
+    <FlowPane prefWidth="200.0">
+        <children>
+            <Label fx:id="enterPassword" alignment="BASELINE_CENTER" pickOnBounds="false" snapToPixel="false" text="Password " textFill="#013c03">
+                <font>
+                    <Font size="11.0" />
+                </font>
+            <FlowPane.margin>
+               <Insets right="6.0" />
+            </FlowPane.margin>
+            </Label>
+            <PasswordField fx:id="registerPassword" alignment="BASELINE_LEFT" onAction="#onTextEdited" onKeyTyped="#onTextEdited">
+                <font>
+                    <Font size="11.0" />
+                </font>
+            </PasswordField>
+        </children>
+    </FlowPane>
+    <Button fx:id="btnConfirm" disable="true" onAction="#onConfirmButtonClick" style="-fx-background-color: #00aa55; -fx-text-fill: #ffffff;" text="Confirm" textAlignment="CENTER" />
+</VBox>
