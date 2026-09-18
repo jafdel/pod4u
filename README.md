@@ -90,6 +90,8 @@ Back in PowerShell, within the same location you downloaded the repo to, launch 
 
 DistroName is the name of your default distro, Username is the username you will use to log into the distro, and ModulePath is the directory where you saved the OpenJFX archive file.
 
+_**Please note:** This process will probably take a few hours to complete first time around as it involves self-hosting a copy of the MusicBrainz database in full._
+
 ### Step 7: Use the app to generate a playlist
 
 
