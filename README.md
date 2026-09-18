@@ -76,11 +76,11 @@ _**Please note:** This step may be unnecessary as keys have already been obtaine
 
 #### a) Set up Face++ account
 
-Go to https://console.faceplusplus.com/login and follow the instructions to create an account. Once signed in, there should be an 'Apps' option on the left-hand side, and 'API Keys' under it. On this page you will find the 'Get API Key' button, which will create a new key for you. Copy the API key and API secret into the `.env` file as values for the FACE_PLUS_API_KEY and FACE_PLUS_API_SECRET keys.
+Go to https://console.faceplusplus.com/register and follow the instructions to create an account. Once signed in, there should be an 'Apps' option on the left-hand side, and 'API Keys' under it. On this page you will find the 'Get API Key' button, which will create a new key for you. Copy the API key and API secret into the `.env` file as values for the FACE_PLUS_API_KEY and FACE_PLUS_API_SECRET keys.
 
 #### b) Set up AcousticBrainz account
 
-
+Go to https://metabrainz.org/signup and follow the instructions to create an account. Once signed in, click your username in the top right-hand corner of the page, and then 'Your profile'. On this page you will find the 'Generate new key' button, which will create a new key for you. Copy the key into the `.env` file as the value for the ACOUSTICBRAINZ_TOKEN key.
 
 #### c) Set up RapidAPI account
 
