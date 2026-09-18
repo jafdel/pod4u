@@ -38,7 +38,7 @@ To install Git, run:
 
 This will install Git in your distro, allowing you to clone the pod4u repo.
 
-##### c) Set up Java 25
+#### c) Set up Java 25
 
 If Java 25 is not installed on your machine, get it at [https://download.oracle.com/java/25/latest/jdk-25_windows-x64_bin.exe](https://download.oracle.com/java/25/latest/jdk-25_windows-x64_bin.exe) and execute it to go through the installation process.
 
