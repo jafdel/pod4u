@@ -26,6 +26,8 @@ You can see the names of available distros using:
 
 `wsl --list --online`
 
+Take note of the name of the distribution as it will be needed later. You will also need your Linux username, which you should be prompted to enter after the distribution has been installed, along with a password.
+
 #### b) Install Git in your distro
 
 Make sure you are inside the Linux environment. If not already in it, simply using the `wsl` command will log the terminal window into your default distro.
@@ -35,6 +37,14 @@ To install Git, run:
 `sudo apt install -y git`
 
 This will install Git in your distro, allowing you to clone the pod4u repo.
+
+##### c) Set up Java 25
+
+If Java 25 is not installed on your machine, get it at [https://download.oracle.com/java/25/latest/jdk-25_windows-x64_bin.exe](https://download.oracle.com/java/25/latest/jdk-25_windows-x64_bin.exe) and execute it to go through the installation process.
+
+#### Set up JavaFX (OpenJFX)
+
+JavaFX is a technology on which pod4u is built, allowing your machine to run rich GUI applications in Java. It can be downloaded from [https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_windows-x64_bin-sdk.zip](https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_windows-x64_bin-sdk.zip). Note the location it is stored at as this will be needed later.
 
 ### Step 3: Clone the repo
 
@@ -54,17 +64,31 @@ Use a PKCE authorisation generator tool such as that found at https://www.authac
 
 #### c) Add authorisation strings
 
-Copy both strings into the `.env` file, assigning them as values for the `CODE_CHALLENGE` and `CODE_VERIFIER` keys.
+Copy both strings into the `.env` file, assigning them as values for the `CODE_CHALLENGE` and `CODE_VERIFIER` keys, again replacing `changeme`.
 
 ### Step 5 (?): Include credentials for other APIs used
 
-_**Please note:** This step may be unnecessary as keys have been obtained and added to the `.env` file for the other APIs this app uses, using dummy accounts linked to (temporary) public-facing email addresses. You may, however, prefer to have your own accounts - or there may be issues with the ones used here - so the steps to create them will be covered below._
+_**Please note:** This step may be unnecessary as keys have already been obtained and added to the `.env` file for the other APIs this app uses, created with dummy accounts linked to (temporary) public-facing email addresses. You may, however, prefer to have your own accounts - or there may be issues with the ones used here - so the steps to create them will be covered below._
+
+#### a) Set up Face++ account
+
+
+
+#### b) Set up AcousticBrainz account
+
+
+
+#### c) Set up RapidAPI account
 
 
 
 ### Step 6: Launch the app
 
+Back in PowerShell, within the same location you downloaded the repo to, launch pod4u by running:
 
+`.\pod4u.ps1 -DefaultDistro <DistroName> -Username <username> -ModulePath <JFXModulePath>`
+
+DistroName is the name of your default distro, Username is the username you will use to log into the distro, and ModulePath is the directory where you saved the OpenJFX archive file.
 
 ### Step 7: Use the app to generate a playlist
 
