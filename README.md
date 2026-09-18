@@ -42,7 +42,7 @@ This will install Git in your distro, allowing you to clone the pod4u repo.
 
 If Java 25 is not installed on your machine, get it at [https://download.oracle.com/java/25/latest/jdk-25_windows-x64_bin.exe](https://download.oracle.com/java/25/latest/jdk-25_windows-x64_bin.exe) and execute it to go through the installation process.
 
-#### Set up JavaFX (OpenJFX)
+#### d) Set up JavaFX (OpenJFX)
 
 JavaFX is a technology on which pod4u is built, allowing your machine to run rich GUI applications in Java. It can be downloaded from [https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_windows-x64_bin-sdk.zip](https://download2.gluonhq.com/openjfx/21.0.2/openjfx-21.0.2_windows-x64_bin-sdk.zip). Note the location it is stored at as this will be needed later.
 
