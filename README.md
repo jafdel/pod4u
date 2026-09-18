@@ -84,7 +84,7 @@ Go to https://metabrainz.org/signup and follow the instructions to create an acc
 
 #### c) Set up RapidAPI account
 
-
+Go to [https://rapidapi.com/auth/sign-up](https://rapidapi.com/auth/sign-up) and follow the instructions to create an account. Once signed in, go to https://rapidapi.com/airaudoeduardo/api/spotify81 and use the blue 'Subscribe to run' button in the top right-hand corner to subscribe to the API. After completing that process you should see a sample HTTP request on the right-hand side of the API playground page, including the `X-Rapidapi-Key` header. Copy its value into the `.env` file as the value for X-RAPIDAPI-KEY.
 
 ### Step 6: Launch the app
 
