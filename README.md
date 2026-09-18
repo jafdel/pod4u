@@ -86,7 +86,7 @@ _**Please note:** This step may be unnecessary as keys have already been obtaine
 
 Back in PowerShell, within the same location you downloaded the repo to, launch pod4u by running:
 
-`.\pod4u.ps1 -DefaultDistro <DistroName> -Username <username> -ModulePath <JFXModulePath>`
+`.\pod4u.ps1 -DefaultDistro <DistroName> -Username <Username> -ModulePath <JFXModulePath>`
 
 DistroName is the name of your default distro, Username is the username you will use to log into the distro, and ModulePath is the directory where you saved the OpenJFX archive file.
 
