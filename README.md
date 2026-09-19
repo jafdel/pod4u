@@ -92,7 +92,7 @@ Back in PowerShell, within the same location you downloaded the repo to, launch 
 
 `.\pod4u.ps1 -DefaultDistro <DistroName> -Username <Username> -ModulePath <JFXModulePath>`
 
-DistroName is the name of your default distro, Username is the username you will use to log into the distro, and ModulePath is the directory where you extracted the OpenJFX archive file.
+DistroName is the name of your default distro, Username is the username you will use to log into the distro, and JFXModulePath is the directory where you extracted the OpenJFX archive file.
 
 _**Please note:** This process will probably take a few hours to complete first time around as it involves self-hosting a copy of the MusicBrainz database in full._
 
