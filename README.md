@@ -98,7 +98,11 @@ _**Please note:** This process will probably take a few hours to complete first 
 
 ### Step 7: Use the app to generate a playlist
 
+Start by clicking the 'Connect Spotify' button. The 'Login' and 'Register' buttons are for creating pod4u accounts whose data will be stored in a dedicated database, a feature yet to be fully implemented.
 
+The next screen will be the playlist generator. First, in order to enable the green buttons, you will need to choose what the maximum duration of your playlist will be. Once this is selected, click the 'Upload photo' button, as at this present time this is the only method of playlist creation that has been built into the app. Choose a photo that matches your mood and confirm it as your choice.
+
+Finally, you should see the 'Your playlist' screen, which will display the Liked tracks that it has determined, based on the photo uploaded, should be in the playlist. It will not exceed the duration selected on the previous screen.
 
 ## Missing features (September 2026)
 
