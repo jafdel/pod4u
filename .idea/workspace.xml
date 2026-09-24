@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8dd466f6-a377-44b8-8bda-92322905c1ad" name="Changes" comment="Reinstate README.md">
+      <change afterPath="$PROJECT_DIR$/musicbrainz/perl-5.42.2.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/InitDb.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/mb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/mb.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/musicbrainz.tar" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/musicbrainz.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/pg_hba.conf" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/pg_hba.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/pg_ident.conf" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/pg_ident.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/pgdata.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/wait.sh" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/wait.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pod4u.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/pod4u.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4U.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4U.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/serialisation/TrackDeserialiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/serialisation/TrackDeserialiser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/pod4u/app/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/pod4u/app/home.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pod4u" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pod4u" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="a95bb7e3b45abf9055608544d5512eb99f49fffb" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jafdel&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jafdel/pod4u&quot;,
+    &quot;accountId&quot;: &quot;4f6228e2-bf6b-41eb-b909-39b4b9066082&quot;
+  }
+}</component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\Brian\.gradle\wrapper\dists\gradle-9.5.0-all\aca6g93cdtcf0oapcfka748qh\gradle-9.5.0" javaHome="C:\Users\Brian\.jdks\openjdk-25.0.2" gradleVersion="9.5.0" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3EGOWKOl49Z4fCgw0z9ybVh7lGf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Coverage",
+    "Application.Launcher.executor": "Coverage",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Gradle.Build pod4u.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.pod4u [:org.pod4u.Launcher.main()].executor": "Run",
+    "Gradle.pod4u [:org.pod4u.app.HelloApplication.main()].executor": "Run",
+    "Gradle.pod4u [:org.pod4u.app.Launcher.main()].executor": "Run",
+    "Gradle.pod4u [:org.pod4u.app.Main.main()].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\Brian\\AppData\\Roaming\\JetBrains\\IntelliJIdea2025.3\\plugins\\Shell Script\\shellcheck.exe",
+    "git-widget-placeholder": "Rebasing master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Brian\IdeaProjects\pod4u\musicbrainz" />
+      <recent name="C:\Users\Brian\IdeaProjects\pod4u\src\main\resources\org\pod4u\app" />
+      <recent name="C:\Users\Brian\IdeaProjects\pod4u\src\main\resources\org\pod4u\" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.pod4u.app" />
+      <recent name="org.pod4u" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.pod4u.app.HelloApplication" />
+      <module name="pod4u.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pod4u.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="FACE_PLUS_API_KEY" value="CwjYZmimqCp_FJGE6g0huRYhQ4VvAF1f" />
+        <env name="FACE_PLUS_API_SECRET" value="0nq2EALWacTpzS75x5Ki95m4AJPsuqFK" />
+        <env name="FACE_TOKEN" value="71d447b6a8597bc40bdef8f3e939551e" />
+        <env name="X-RAPIDAPI-KEY" value="a6192a42d4mshe8e83d390e9ab5cp1c7bf2jsnac454c75c96d" />
+        <env name="P4UDB_URL" value="127.0.0.1,1433" />
+        <env name="P4UDB_USER" value="SA" />
+        <env name="P4UDB_PASSWORD" value="pod4uDB_1" />
+        <env name="MBDB_URL" value="jdbc:postgresql://localhost/musicbrainz_db?sslmode=disable&amp;socketFactory='org.newsclub.net.unix.AFUNIXSocketFactory$FactoryArg'&amp;socketFactoryArg=/var/run/postgresql/.s.PGSQL.5432" />
+        <env name="MBDB_USER" value="musicbrainz" />
+        <env name="MBDB_PASSWORD" value="musicbrainz" />
+        <env name="SPOTIFY_CLIENT_ID" value="3dfb5f06677b4d969639eb63d03198ba" />
+        <env name="SPOTIFY_SECRET" value="6c958ec1dcab4704b74c8eb4f276a51f" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="org.pod4u.app.Main" />
+      <module name="pod4u.main" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-21.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml,at.favre.lib.crypto.bcrypt,com.kohlschutter.junixsocket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pod4u.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.HelloApplication" />
+      <item itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8dd466f6-a377-44b8-8bda-92322905c1ad" name="Changes" comment="" />
+      <created>1779801474205</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779801474205</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Reinstate README.md">
+      <option name="closed" value="true" />
+      <created>1789762449749</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1789762449749</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reinstate README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reinstate README.md" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/mood/MoodGenerator.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/serialisation/MoodDeserialiser.java</url>
+          <line>19</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
+          <line>212</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
+          <line>240</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/account/SpotifyAccount.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
+          <line>238</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-databind/3.1.3/4010dd33c337ee86407051b36bd14ad0c10824b6/jackson-databind-3.1.3-sources.jar!/tools/jackson/databind/deser/bean/BeanDeserializer.java</url>
+          <line>708</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/JsonParser.java</url>
+          <line>1855</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <line>173</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <line>211</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <line>222</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <line>243</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <line>258</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/serialisation/AudioDeserialiser.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
+          <line>180</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
+          <line>241</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/Playlist.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
+          <line>205</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/mood/Mood.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/module-info.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="198" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="jdk.internal.net.http.HttpResponseImpl" memberName="sslSession" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="artists.toString().split(&quot;=&quot;)" language="JAVA" />
+        <watch expression="tempoMatch" language="JAVA" />
+        <watch expression="isMatch[0]" language="JAVA" />
+        <watch expression="loudnessMatch" language="JAVA" />
+        <watch expression="ids.indexOf(item.substring(1, 36)) / 37" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pod4u$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1779803797597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.pod4u.app.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/pod4u$Launcher.ic" NAME="Launcher Coverage Results" MODIFIED="1779810578496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.pod4u.app.*</FILTER>
+    </SUITE>
+  </component>
+</project>

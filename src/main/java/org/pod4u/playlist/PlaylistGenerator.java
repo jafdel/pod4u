@@ -25,12 +25,12 @@ public class PlaylistGenerator {
     //private AudioAnalysis[] trackData;
     private Playlist playlist;
 
-    public PlaylistGenerator(List<Track> savedTracks, AudioDeserialiser serialiser, Mood mood, String accessToken) throws SQLException {
+    public PlaylistGenerator(List<Track> savedTracks, AudioDeserialiser serialiser, Mood mood, String accessToken) throws IllegalStateException {
         List<Audio> savedAudio = new ArrayList<Audio>(), otherAudio = new ArrayList<Audio>();
         String[] mainIds = new String[25], otherIds = new String[(savedTracks.size()/50)];
+        String bearer = System.getenv("ACOUSTICBRAINZ_TOKEN");
         try {
             HttpClient client = HttpClient.newHttpClient();
-            //SpotifyApi api = new SpotifyApi.Builder().setAccessToken(accessToken).build();
             int index = 0;
             for (Track savedTrack : savedTracks) {
                 String isrc = savedTrack.getIsrc();
@@ -39,17 +39,11 @@ public class PlaylistGenerator {
                 String mbid = preResponse.body();
                 if (!isrc.startsWith("USIR") && !mbid.replace("[", "").replace("]", "").isBlank() && !mbid.contains("null")) {
                     savedAudio.add(new Audio(savedTrack, mbid.split("gid\": \"")[1].split("\"")[0]));
-                    /*String sql = "SELECT r.gid FROM isrc i JOIN recording r ON i.recording = r.id WHERE i.isrc=?";
-                    Class.forName("org.newsclub.net.unix.AFUNIXSocketFactory$FactoryArg");
-                    Connection conn = MBDatabaseConnection.getConnection();
-                    var stmt = conn.prepareStatement(sql);
-                    stmt.setObject(1, isrc);
-                    var rs = stmt.executeQuery();
-                    if (rs.next())
-                        mainIds[savedAudio.size()-1] = rs.getString("gid");*/
                     mainIds[savedAudio.size()-1] = mbid.split("gid\": \"")[1].split("\"")[0];
                     if (savedAudio.size()%25==0 || savedAudio.size()+this.sortedAudio.size()+otherAudio.size()==savedTracks.size() || savedTrack.equals(savedTracks.getLast())) {
-                        HttpRequest request = HttpRequest.newBuilder().uri(new URI("https://acousticbrainz.org/api/v1/high-level?recording_ids=" + Arrays.toString(mainIds).replace("[", "").replace("]", "").replace(", ", ";").replace("\"", "").replace(";null", "").replace(";\"null\"", ""))).header("Accept", "application/json").header("Authorization", "Bearer 6arnu8GSppFd4YdrVElxs8aWAMe8QrlkHn4AfEVo").GET().build();
+                        if (bearer.length()!=40)
+                            throw new IllegalStateException("Error: invalid environment variable. Please set the AcousticBrainz token to a 40-character alphanumeric string.");
+                        HttpRequest request = HttpRequest.newBuilder().uri(new URI("https://acousticbrainz.org/api/v1/high-level?recording_ids=" + Arrays.toString(mainIds).replace("[", "").replace("]", "").replace(", ", ";").replace("\"", "").replace(";null", "").replace(";\"null\"", ""))).header("Accept", "application/json").header("Authorization", "Bearer " + bearer).GET().build();
                         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
                         MBAudioAnalysis[] mbAudioData = serialiser.deserializeMBAudio(response.body().replaceFirst("\\{", "").replace("}}}}},", "}}}}},,").split("}}}}},,\"mbid_mapping\"")[0].concat("}}}}}").split(",,"), Arrays.toString(mainIds).replace("[", "").replace("]", "").replace("\"", "").replace(", ", ","));
                         for (int i=0; i<savedAudio.size(); i++) {

@@ -32,6 +32,8 @@ import java.sql.SQLException;
 
 public class Pod4UController {
     @FXML
+    public VBox vbxMain;
+    @FXML
     public HBox hbxPlaylists;
     @FXML
     public AnchorPane ancPlaylists;
