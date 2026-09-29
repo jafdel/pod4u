@@ -16,6 +16,16 @@
       <change afterPath="$PROJECT_DIR$/musicbrainz/pg_hba.conf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/musicbrainz/pg_ident.conf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/musicbrainz/wait.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/mb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/mb.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicbrainz/wait.sh" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/wait.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +89,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/musicbrainz" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-253.31033.145">
+    <data-source name="musicbrainz" uuid="4f45098c-8805-4967-b226-b31a0c5c6376">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="42.7.13" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>musicbrainz</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
