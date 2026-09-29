@@ -5,29 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd466f6-a377-44b8-8bda-92322905c1ad" name="Changes" comment="Reinstate README.md">
-      <change afterPath="$PROJECT_DIR$/musicbrainz/perl-5.42.2.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musicbrainz/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicbrainz/InitDb.pl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/musicbrainz/mb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/mb.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicbrainz/musicbrainz.tar" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/musicbrainz.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicbrainz/pg_hba.conf" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/pg_hba.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicbrainz/pg_ident.conf" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/pg_ident.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicbrainz/pgdata.tar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/musicbrainz/wait.sh" beforeDir="false" afterPath="$PROJECT_DIR$/musicbrainz/wait.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pod4u.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/pod4u.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4U.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4U.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/serialisation/TrackDeserialiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/serialisation/TrackDeserialiser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/pod4u/app/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/pod4u/app/home.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +43,18 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="pod4u" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pod4u" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pod4u" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -105,39 +104,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Coverage",
-    "Application.Launcher.executor": "Coverage",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Gradle.Build pod4u.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.pod4u [:org.pod4u.Launcher.main()].executor": "Run",
-    "Gradle.pod4u [:org.pod4u.app.HelloApplication.main()].executor": "Run",
-    "Gradle.pod4u [:org.pod4u.app.Launcher.main()].executor": "Run",
-    "Gradle.pod4u [:org.pod4u.app.Main.main()].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHELLCHECK.PATH": "C:\\Users\\Brian\\AppData\\Roaming\\JetBrains\\IntelliJIdea2025.3\\plugins\\Shell Script\\shellcheck.exe",
-    "git-widget-placeholder": "Rebasing master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Coverage&quot;,
+    &quot;Application.Launcher.executor&quot;: &quot;Coverage&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Gradle.Build pod4u.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.pod4u [:org.pod4u.Launcher.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.pod4u [:org.pod4u.app.HelloApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.pod4u [:org.pod4u.app.Launcher.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.pod4u [:org.pod4u.app.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.pod4u [wrapper].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\Brian\\AppData\\Roaming\\JetBrains\\IntelliJIdea2025.3\\plugins\\Shell Script\\shellcheck.exe&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brian/pod4u&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Brian\IdeaProjects\pod4u\musicbrainz" />
@@ -149,7 +150,7 @@
       <recent name="org.pod4u" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.pod4u [wrapper]">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.pod4u.app.HelloApplication" />
       <module name="pod4u.main" />
@@ -191,12 +192,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="pod4u [wrapper]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="wrapper" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.HelloApplication" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.pod4u [wrapper]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.pod4u [wrapper]" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.HelloApplication" />
       </list>
@@ -325,7 +353,7 @@
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-databind/3.1.3/4010dd33c337ee86407051b36bd14ad0c10824b6/jackson-databind-3.1.3-sources.jar!/tools/jackson/databind/deser/bean/BeanDeserializer.java</url>
+          <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-databind/3.1.3/4010dd33c337ee86407051b36bd14ad0c10824b6/jackson-databind-3.1.3-sources.jar!/tools/jackson/databind/deser/bean/BeanDeserializer.java</url>
           <line>708</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
@@ -335,37 +363,37 @@
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/JsonParser.java</url>
+          <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/JsonParser.java</url>
           <line>1855</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
           <line>64</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
           <line>149</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
           <line>163</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
           <line>173</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
           <line>211</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
           <line>222</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
@@ -373,12 +401,12 @@
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
           <line>243</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
+          <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/TokenStreamLocation.java</url>
           <line>258</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
