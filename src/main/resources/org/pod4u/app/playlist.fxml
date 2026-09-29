@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ancPlaylists" blendMode="ADD" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dddd44; -fx-border-radius: 18px;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pod4u.app.Pod4UController">
+    <Label fx:id="playlistText" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="35.0" prefWidth="600.0" style="maxWidth: 125%;" text="Your playlist" textAlignment="CENTER" textFill="#013c03" textOverrun="CLIP" wrapText="true">
+        <font>
+            <Font size="24.0" />
+        </font></Label>
+   <HBox fx:id="hbxPlaylists" layoutY="35.0" prefHeight="294.0" prefWidth="661.0">
+      <children>
+         <VBox prefHeight="200.0" prefWidth="100.0" />
+      </children></HBox>
+</AnchorPane>
