@@ -94,9 +94,9 @@ Back in PowerShell, within the same location you downloaded the repo to, launch 
 
 DistroName is the name of your default distro, Username is the username you will use to log into the distro, and JFXModulePath is the directory where you extracted the OpenJFX archive file.
 
-You will probably be prompted for a 'sudo' password at the beginning of this process. Use the password you gave your user account when you created it after installing your Linux distro.
+You will probably be prompted for a 'sudo' password during this process. It **may not necessarily happen at the very beginning** so it is recommended that you keep a close eye on its progress at least until the prompt appears. When prompted for the 'sudo' password, use the one you gave your user account when you created it after installing your Linux distro.
 
-_**Please note:** This process will probably take a few hours to complete first time around as it involves self-hosting a copy of the MusicBrainz database in full._
+_**Please note:** This process will probably take **a few hours** to complete first time around as it involves self-hosting a copy of the MusicBrainz database in full. It is therefore recommended that you initially **keep an eye on its progress** at least until the password prompt has appeared, which may not be right at the beginning, as it will pause execution until authentication is complete._
 
 ### Step 7: Use the app to generate a playlist
 
