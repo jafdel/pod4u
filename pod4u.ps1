@@ -14,7 +14,8 @@ Get-Content .env | ForEach-Object {
   [System.Environment]::SetEnvironmentVariable($name, $value)
 }
 Set-Location .\musicbrainz
-wsl -u $Username -d $DefaultDistro bash -c "sudo apt update; sudo apt upgrade -y; sudo apt install -y dos2unix; dos2unix mb.sh; chmod +x mb.sh; ./mb.sh $Username"
+wsl -u root -d $DefaultDistro bash -c "sudo apt update; sudo apt upgrade -y; sudo apt install -y dos2unix; dos2unix mb.sh"
+wsl -u $Username -d $DefaultDistro bash -c "chmod +x mb.sh; ./mb.sh $Username"
 Set-Location ..\
 .\gradlew.bat clean build --no-build-cache
 javac -p $JFXModulePath -cp ".\src\main\java;.\src\main\resources" -d .\out --add-modules javafx.graphics,javafx.fxml,javafx.controls,java.base .\src\main\java\org\pod4u\app\Main.java
