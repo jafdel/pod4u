@@ -9,7 +9,7 @@ sudo -k && sudo apt install setfacl && sudo setfacl -m u:$(id -u):rwx -R /var/li
 psql -U musicbrainz -c "CREATE ROLE web_anon NOLOGIN;"
 #psql -U musicbrainz =c "CREATE SCHEMA musicbrainz;"
 psql -U musicbrainz -c "GRANT USAGE ON SCHEMA musicbrainz TO web_anon;"
-psql -U musicbrainz -c "GRANT SELECT ON musicbrainz.* TO web_anon;"
+psql -U musicbrainz -c "GRANT SELECT ON ALL TABLES IN SCHEMA musicbrainz TO web_anon;"
 psql -U musicbrainz -c "CREATE ROLE authenticator NOINHERIT LOGIN PASSWORD 'p455w0rd';"
 psql -U musicbrainz -c "GRANT web_anon TO authenticator;"
 pg_isready -d "musicbrainz"
