@@ -14,8 +14,10 @@ Get-Content .env | ForEach-Object {
   [System.Environment]::SetEnvironmentVariable($name, $value)
 }
 Set-Location .\musicbrainz
-wsl -u root -d $DefaultDistro bash -c "sudo apt update; sudo apt upgrade -y; sudo apt install -y dos2unix; dos2unix mb.sh"
+wsl -u root -d $DefaultDistro bash -c "apt update; apt upgrade -y; apt install -y dos2unix; dos2unix mb.sh"
 wsl -u $Username -d $DefaultDistro bash -c "chmod +x mb.sh; ./mb.sh $Username"
+wsl -u root -d $DefaultDistro bash -c "apt update; apt install -y containerd.io docker-ce docker-ce-cli docker-ce-rootless-extras --fix-missing; docker-volume-snapshot restore ./pgdata.tar.bz2 pgdata; ~/bin/docker rm -f mb 2>/dev/null; ~/bin/docker load -i musicbrainz.tar; ~/bin/docker buildx build . -t mb:latest"
+wsl -u root -d $DefaultDistro bash -c "~/bin/docker run -it --name mb -d -h localhost -p 5432:5432 -e POSTGRES_USER=musicbrainz -e POSTGRES_PASSWORD=musicbrainz -e POSTGRES_DB=musicbrainz_db -v pgdata:/var/lib/postgresql mb:latest; chown -R $USERNAME /var/run/docker.sock; ~/bin/docker exec -it mb /bin/bash -c /pg.sh; rm xaa xab xac xad xae xaf xag xah xai ./pgdata.tar.bz2"
 Set-Location ..\
 .\gradlew.bat clean build --no-build-cache
 javac -p $JFXModulePath -cp ".\src\main\java;.\src\main\resources" -d .\out --add-modules javafx.graphics,javafx.fxml,javafx.controls,java.base .\src\main\java\org\pod4u\app\Main.java
