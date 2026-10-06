@@ -16,7 +16,7 @@ Get-Content .env | ForEach-Object {
 Set-Location .\musicbrainz
 wsl -u root -d $DefaultDistro bash -c "apt update; apt upgrade -y; apt install -y dos2unix; dos2unix mb.sh"
 wsl -u $Username -d $DefaultDistro bash -c "chmod +x mb.sh; ./mb.sh $Username"
-wsl -u root -d $DefaultDistro bash -c "apt update; apt install -y containerd.io docker-ce docker-ce-cli docker-ce-rootless-extras --fix-missing; /home/$Username/bin/docker rm -f mb 2>/dev/null; chown -R $Username /var/run/docker.sock"
+wsl -u root -d $DefaultDistro bash -c "apt update; apt install -y containerd.io docker-ce docker-ce-cli docker-ce-rootless-extras --fix-missing; /home/$Username/bin/docker rm -f mb 2>/dev/null; chown -R $Username /var/run/docker.sock; docker-volume-snapshot restore ./pgdata.tar.bz2 pgdata"
 wsl -u $Username -d $DefaultDistro bash -c "/home/$Username/bin/docker load -i musicbrainz.tar; /home/$Username/bin/docker buildx build . -t mb:latest; /home/$Username/bin/docker run -it --name mb -d -h localhost -p 5432:5432 -e POSTGRES_USER=musicbrainz -e POSTGRES_PASSWORD=musicbrainz -e POSTGRES_DB=musicbrainz_db -v pgdata:/var/lib/postgresql mb:latest; rm xaa xab xac xad xae xaf xag xah xai ./pgdata.tar.bz2"
 Set-Location ..\
 .\gradlew.bat clean build --no-build-cache
