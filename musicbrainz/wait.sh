@@ -4,7 +4,7 @@ Username=$1
 HOST="${PGHOST:-localhost}"
 PORT="${PGPORT:-5432}"
 USER="${PGUSER:-postgres}"
-
+/usr/bin/systemctl --user enable docker --now && /usr/bin/systemctl --user start docker --now
 echo "Waiting for container mb..."
 until bash -c "/home/$Username/bin/docker ps --format '{{.Names}}' | grep -Fxq mb"; do
   sleep 1
