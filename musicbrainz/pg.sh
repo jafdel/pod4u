@@ -6,7 +6,7 @@ set -e
 #psql -U musicbrainz -c "CREATE ROLE postgres LOGIN SUPERUSER PASSWORD 'postgres';"
 #psql -U musicbrainz -c "CREATE DATABASE musicbrainz_db;"
 psql -U musicbrainz -d musicbrainz_db -c "CREATE ROLE web_anon NOLOGIN;"
-psql -U musicbrainz =c "CREATE SCHEMA IF NOT EXISTS musicbrainz;"
+psql -U musicbrainz -d musicbrainz_db -c "CREATE SCHEMA IF NOT EXISTS musicbrainz;"
 psql -U musicbrainz -d musicbrainz_db -c "GRANT USAGE ON SCHEMA musicbrainz TO web_anon;"
 psql -U musicbrainz -d musicbrainz_db -c "GRANT SELECT ON ALL TABLES IN SCHEMA musicbrainz TO web_anon;"
 psql -U musicbrainz -d musicbrainz_db -c "CREATE ROLE authenticator NOINHERIT LOGIN PASSWORD 'p455w0rd';"
