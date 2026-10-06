@@ -22,4 +22,4 @@ Set-Location ..\
 .\gradlew.bat clean build --no-build-cache
 javac -p $JFXModulePath -cp ".\src\main\java;.\src\main\resources" -d .\out --add-modules javafx.graphics,javafx.fxml,javafx.controls,java.base .\src\main\java\org\pod4u\app\Main.java
 javaw.exe -p $JFXModulePath -cp ".\build\classes\java\main;.\src\main\java;.\src\main\resources;.\out" --add-modules javafx.graphics,javafx.fxml,javafx.controls,java.base org.pod4u.app.Main
-wsl -u $Username -d $DefaultDistro bash -c "chmod +x ./musicbrainz/wait.sh; dos2unix ./musicbrainz/wait.sh; ./musicbrainz/wait.sh $Username; rm xaa xab xac xad xae xaf xag xah xai ./pgdata.tar.bz2"
+wsl -u $Username -d $DefaultDistro bash -c "chmod +x ./musicbrainz/wait.sh; dos2unix ./musicbrainz/wait.sh; rm xaa xab xac xad xae xaf xag xah xai ./pgdata.tar.bz2; ./musicbrainz/wait.sh $Username"
