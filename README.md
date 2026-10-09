@@ -90,7 +90,7 @@ Go to [https://rapidapi.com/auth/sign-up](https://rapidapi.com/auth/sign-up) and
 
 ### Step 6: Launch the app
 
-_**Please note**: Currently, it is necessary to open the pod4u.ps1 file before carrying out the below steps, and replace the 'changeme' values with the correct ones for the environment variable names (`SPOTIFY_CLIENT_ID`, `SPOTIFY_SECRET`, `CODE_CHALLENGE` and `CODE_VERIFIER`. This is instead of **step 4**._
+_**Please note**: Currently, it is necessary to open the pod4u.ps1 file before carrying out the below steps, and replace the 'changeme' values with the correct ones for the environment variable names (`SPOTIFY_CLIENT_ID`, `SPOTIFY_SECRET`, `CODE_CHALLENGE` and `CODE_VERIFIER`). This is instead of **step 4**._
 
 Back in PowerShell, within the same location you downloaded the repo to, launch pod4u by copying and pasting the below before hitting Enter:
 
