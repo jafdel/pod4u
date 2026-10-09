@@ -56,7 +56,9 @@ To obtain a local copy of pod4u, stored in the directory you specified in PowerS
 
 `git clone https://github.com/jafdel/pod4u`
 
-### Step 4: Include requirements for Spotify API access
+### Step 4 (?): Include requirements for Spotify API access
+
+_**Please note**: For the time being, this step can be skipped as this approach to including credentials has been found to not work correctly, and has thus been replaced, on what should be a temporary basis, with an alternative which is covered by the script launched in **Step 6**._
 
 #### a) Add Spotify Developer keys
 
@@ -88,9 +90,11 @@ Go to [https://rapidapi.com/auth/sign-up](https://rapidapi.com/auth/sign-up) and
 
 ### Step 6: Launch the app
 
-Back in PowerShell, within the same location you downloaded the repo to, launch pod4u by running:
+_**Please note**: Currently, it is necessary to open the pod4u.ps1 file before carrying out the below steps, and replace the 'changeme' values with the correct ones for the environment variable names (`SPOTIFY_CLIENT_ID`, `SPOTIFY_SECRET`, `CODE_CHALLENGE` and `CODE_VERIFIER`. This is instead of **step 4**._
 
-`.\pod4u.ps1 -DefaultDistro <DistroName> -Username <Username> -ModulePath <JFXModulePath>`
+Back in PowerShell, within the same location you downloaded the repo to, launch pod4u by copying and pasting the below before hitting Enter:
+
+.\pod4u.ps1 -DefaultDistro <DistroName> -Username <Username> -ModulePath <JFXModulePath>
 
 DistroName is the name of your default distro, Username is the username you will use to log into the distro, and JFXModulePath is the directory where you extracted the OpenJFX archive file.
 

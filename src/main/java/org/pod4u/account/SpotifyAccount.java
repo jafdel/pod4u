@@ -19,6 +19,7 @@ public class SpotifyAccount {
             ArrayList<Track> tracks = TrackDeserialiser.deserialiseTracks(input.split("\"items\":\\[")[1].split("],\"limit\":")[0].replaceAll(",\\{\"album\":", "{\"album\":").replaceAll(",\\{\"album\":", "{\"album\":").replaceAll("\\{\"added_at\":\"", "").replace("type\":\"track\",\"uri", "type\":\"track\",\"track_").replace("\"uri\"", "\"u\"").replace("track_", "uri").split(",\"track\":"));
             for (Track track : tracks)
                 trackList.add(track);
+            IO.println(trackList.size());
         } catch(Exception e) {
             IO.println(e);
         }

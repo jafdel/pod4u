@@ -1,7 +1,7 @@
 package org.pod4u.audio;
 
 import com.fasterxml.jackson.annotation.*;
-import tools.jackson.databind.annotation.JsonDeserialize;
+import tools.jackson.databind.annotation.*;
 
 import java.util.LinkedHashMap;
 

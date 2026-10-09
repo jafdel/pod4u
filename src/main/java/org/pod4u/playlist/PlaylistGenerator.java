@@ -37,7 +37,9 @@ public class PlaylistGenerator {
                 HttpRequest preRequest = HttpRequest.newBuilder().uri(new URI("http://localhost:3000/isrc?select=recording%28gid%29&isrc=eq." + isrc)).header("Content-Type", "application/json").header("Accept", "application/json").GET().build();
                 HttpResponse<String> preResponse = client.send(preRequest, HttpResponse.BodyHandlers.ofString());
                 String mbid = preResponse.body();
+                IO.println(mbid);
                 if (!isrc.startsWith("USIR") && !mbid.replace("[", "").replace("]", "").isBlank() && !mbid.contains("null")) {
+                    IO.println("if");
                     savedAudio.add(new Audio(savedTrack, mbid.split("gid\": \"")[1].split("\"")[0]));
                     mainIds[savedAudio.size()-1] = mbid.split("gid\": \"")[1].split("\"")[0];
                     if (savedAudio.size()%25==0 || savedAudio.size()+this.sortedAudio.size()+otherAudio.size()==savedTracks.size() || savedTrack.equals(savedTracks.getLast())) {
@@ -50,6 +52,7 @@ public class PlaylistGenerator {
                             if (savedAudio.get(i).getCode()!=null && response.body().contains(savedAudio.get(i).getCode())) {
                                 savedAudio.get(i).setData(mbAudioData[i], mood);
                                 this.sortedAudio.add(savedAudio.get(i));
+                                IO.println(savedAudio.get(i).getTrack().getTitle());
                             } else {
                                 otherAudio.add(savedAudio.get(i));
                                 if (otherIds[index].split(",").length>=51)
@@ -62,6 +65,7 @@ public class PlaylistGenerator {
                         savedAudio = new ArrayList<>();
                     }
                 } else {
+                    IO.println("else");
                     otherAudio.add(new Audio(savedTrack, isrc));
                     if (otherIds[index]==null)
                         otherIds[index] = "";
