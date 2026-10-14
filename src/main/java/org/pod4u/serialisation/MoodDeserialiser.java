@@ -6,6 +6,7 @@ import tools.jackson.core.StreamReadFeature;
 import tools.jackson.core.json.JsonReadFeature;
 import tools.jackson.databind.DeserializationFeature;
 import tools.jackson.databind.json.JsonMapper;
+import tools.jackson.databind.*;
 
 import java.util.ArrayList;
 
@@ -22,7 +23,7 @@ public class MoodDeserialiser {
             String face = "{" + faces[0].replace("\"emotion\":{", "").replace("},\"beauty", ",\"beauty").replace("\"mouthstatus\":{", "").replace("},\"eyegaze", ",\"eyegaze").replace("\"skinstatus\":{", "").replace("},\"glass\":{\"value\"", ",\"glass\"").replace("\"smile\":{\"value\"", "\"smile\"").replace("},\"headpose\":{", ",").replace("},\"eyestatus", ",\"eyestatus") + "}";
             return mapper.readValue(face, Mood.class);
         } catch(Exception e) {
-            IO.println(e);
+            IO.println(e + " in MoodDeserialiser.deserialiseMood");
             return null;
         }
     }

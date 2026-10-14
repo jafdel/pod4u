@@ -1,5 +1,7 @@
 package org.pod4u.app;
 
+import javafx.application.Platform;
+import javafx.concurrent.Task;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
@@ -25,6 +27,7 @@ import org.pod4u.playlist.PlaylistGenerator;
 import org.pod4u.serialisation.AudioDeserialiser;
 import org.pod4u.serialisation.MoodDeserialiser;
 
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.io.File;
 import java.io.IOException;
@@ -83,12 +86,12 @@ public class Pod4UController {
 
     @FXML
     protected void onConnectButtonClick() throws IOException, InterruptedException {
-        Stage stage = new Stage();
-        showGenerator(stage);
-        this.auth.connect();
-        setupGenerator(false);
-        Stage.getWindows().getFirst().hide();
-        stage.show();
+        //Stage stage = new Stage();
+        //showGenerator(stage);
+        connectSpotify();
+        //setupGenerator(false);
+        //Stage.getWindows().getFirst().hide();
+        //stage.show();
     }
 
     @FXML
@@ -140,7 +143,7 @@ public class Pod4UController {
     private void setupGenerator(boolean generatorReady) {
         try {
             while (!generatorReady) {
-                Thread.sleep(2000);
+                Thread.sleep(1000);
                 generatorReady = Authenticator.generatorReady();
             }
         } catch(InterruptedException e) {
@@ -149,11 +152,25 @@ public class Pod4UController {
     }
 
     private void connectSpotify() throws IOException, InterruptedException {
-        this.auth.connect();
-        setupGenerator(false);
-        Stage.getWindows().get(1).hide();
-        Stage.getWindows().getFirst().hide();
-        showGenerator(new Stage()).show();
+        Task<Void> task = new Task<>() {
+            @Override
+            protected Void call() throws Exception {
+                return (Void)null;
+            }
+        };
+        task.setOnSucceeded(event -> {
+            Platform.runLater(() -> {
+                try {
+                    //setupGenerator(false);
+                    //Stage.getWindows().get(1).hide();
+                    Stage.getWindows().getFirst().hide();
+                    showGenerator(new Stage()).show();
+                } catch(IOException e) {
+                    IO.println(e);
+                }
+            });
+        });
+        Authenticator.connect(task);
     }
 
     @FXML
@@ -180,30 +197,32 @@ public class Pod4UController {
         //this.hbxPlaylists.setLayoutY(35.0);
         String[] info = this.info.split("\r\n\r\n");
         for (String track : info) {
-            HBox hbx = new HBox();
-            hbx.setLayoutY(35.0 + (40.0 * this.ancPlaylists.getChildren().size()));
-            this.ancPlaylists.getChildren().add(hbx);
-            Label lblTitle = new Label(), lblArtists = new Label(), lblDuration = new Label();
-            VBox vbxTrack = new VBox(), vbxDuration = new VBox();
-            vbxTrack.setPrefWidth(565.0);
-            vbxTrack.setMaxWidth(565.0);
-            vbxTrack.setPrefHeight(40.0);
-            vbxTrack.setMaxHeight(40.0);
-            vbxTrack.setPadding(new Insets(0.0, 0.0, 0.0, 8.0));
-            vbxDuration.setPrefWidth(100.0);
-            vbxDuration.setMaxWidth(100.0);
-            vbxDuration.setPrefHeight(40.0);
-            vbxDuration.setMaxHeight(40.0);
-            hbx.getChildren().add(vbxTrack);
-            hbx.getChildren().add(vbxDuration);
-            lblTitle.setTextFill(Paint.valueOf("#013c03"));
-            lblArtists.setTextFill(Paint.valueOf("#013c03"));
-            lblDuration.setTextFill(Paint.valueOf("#013c03"));
-            vbxTrack.getChildren().addAll(lblTitle, lblArtists);
-            vbxDuration.getChildren().add(lblDuration);
-            lblTitle.setText(track.split("\r\n")[0]);
-            lblArtists.setText(track.split("\r\n")[1]);
-            lblDuration.setText(String.format("%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(Long.parseLong(track.split("\r\n")[3])), TimeUnit.MILLISECONDS.toSeconds(Long.parseLong(track.split("\r\n")[3])) % 60));
+            if (!track.isEmpty()) {
+                HBox hbx = new HBox();
+                hbx.setLayoutY(35.0 + (40.0 * this.ancPlaylists.getChildren().size()));
+                this.ancPlaylists.getChildren().add(hbx);
+                Label lblTitle = new Label(), lblArtists = new Label(), lblDuration = new Label();
+                VBox vbxTrack = new VBox(), vbxDuration = new VBox();
+                vbxTrack.setPrefWidth(565.0);
+                vbxTrack.setMaxWidth(565.0);
+                vbxTrack.setPrefHeight(40.0);
+                vbxTrack.setMaxHeight(40.0);
+                vbxTrack.setPadding(new Insets(0.0, 0.0, 0.0, 8.0));
+                vbxDuration.setPrefWidth(100.0);
+                vbxDuration.setMaxWidth(100.0);
+                vbxDuration.setPrefHeight(40.0);
+                vbxDuration.setMaxHeight(40.0);
+                hbx.getChildren().add(vbxTrack);
+                hbx.getChildren().add(vbxDuration);
+                lblTitle.setTextFill(Paint.valueOf("#013c03"));
+                lblArtists.setTextFill(Paint.valueOf("#013c03"));
+                lblDuration.setTextFill(Paint.valueOf("#013c03"));
+                vbxTrack.getChildren().addAll(lblTitle, lblArtists);
+                vbxDuration.getChildren().add(lblDuration);
+                lblTitle.setText(track.split("\r\n")[0]);
+                lblArtists.setText(track.split("\r\n")[1]);
+                lblDuration.setText(String.format("%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(Long.parseLong(track.split("\r\n")[3])), TimeUnit.MILLISECONDS.toSeconds(Long.parseLong(track.split("\r\n")[3])) % 60));
+            }
         }
         //Stage.getWindows().getFirst().hide();
         showStage(stage, scene);
@@ -211,16 +230,14 @@ public class Pod4UController {
 
     private byte[] isMatch() {
         final float clarity = this.moodGen.getMood().getClarity(), presence = this.moodGen.getMood().getPresence();
-        final boolean[] toneMatch = new boolean[]{clarity>9, clarity<=9 && clarity>6, clarity<=6 && clarity>3, clarity<=3 && clarity>0, clarity==0}, loudnessMatch = new boolean[]{presence<-25, presence>=-25 && presence<-20, presence>=-20 && presence<-15, presence>=-15 && presence<-10, presence>=-10 && presence<-5, presence>=-5};
-        byte[] isMatch = new byte[]{-1, -1};
+        final boolean[] toneMatch = new boolean[]{clarity>84, clarity<=84 && clarity>68, clarity<=68 && clarity>52, clarity<=52 && clarity>36, clarity<=36 && clarity>20, clarity<=20 && clarity>4, clarity<=4}, loudnessMatch = new boolean[]{presence<-25, presence>=-25 && presence<-20, presence>=-20 && presence<-15, presence>=-15 && presence<-10, presence>=-10 && presence<-5, presence>=-5};
+        byte[] isMatch = new byte[]{6, 5};
         for (int i=0; i<loudnessMatch.length; i++) {
-            if (i<toneMatch.length && toneMatch[i])
+            if (toneMatch[i])
                 isMatch[0] = (byte)i;
             if (loudnessMatch[i])
                 isMatch[1] = (byte)i;
         }
-        if (isMatch[0]==-1)
-            isMatch[0] = (byte)6;
         return isMatch;
     }
 

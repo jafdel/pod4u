@@ -115,7 +115,8 @@ public class PlaylistGenerator {
                     if (!Float.valueOf(audio.getData().getLoudness()).toString().equals("null"))
                         loudness = audio.getData().getLoudness();
                 }
-                final boolean[] toneMatch = new boolean[]{tone > 9, tone <= 9 && tone > 6, tone <= 6 && tone > 3, tone <= 3 && tone > 0, tone == 0}, loudnessMatch = new boolean[]{loudness < -25, loudness >= -25 && loudness < -20, loudness >= -20 && loudness < -15, loudness >= -15 && loudness < -10, loudness >= -10 && loudness < -5, loudness >= -5};
+                final boolean[] toneMatch = new boolean[]{tone>84, tone<=84 && tone>68, tone<=68 && tone>52, tone<=52 && tone>36, tone<=36 && tone>20, tone<=20 && tone>4, tone<=4}, loudnessMatch = new boolean[]{loudness<-25, loudness>=-25 && loudness<-20, loudness>=-20 && loudness<-15, loudness>=-15 && loudness<-10, loudness>=-10 && loudness<-5, loudness>=-5};
+                IO.println(Arrays.toString(toneMatch));
                 if (totalDuration + audio.getTrack().getDuration() <= maxDuration && toneMatch[isMatch[0]] && loudnessMatch[isMatch[1]]) {
                     totalDuration += audio.getTrack().getDuration();
                     selectedAudio.add(audio);
@@ -140,8 +141,9 @@ public class PlaylistGenerator {
             String artist = "";
             for (int o=0; o<track.getArtists().length; o++)
                 artist = artist.concat(track.getArtists()[o] + " • ");
-            info = info.concat(track.getTitle() + "\r\n" + artist.replace(String.valueOf(artist.charAt(artist.length()-2)), "").trim() + "\r\n" + track.getUri() + "\r\n" + track.getDuration() + "\r\n\r\n");
+            info = info.concat("\r\n\r\n" + track.getTitle() + "\r\n" + artist.replace(String.valueOf(artist.charAt(artist.length()-2)), "").trim() + "\r\n" + track.getUri() + "\r\n" + track.getDuration());
         }
+        IO.println(info);
         return info.trim();
     }
 }

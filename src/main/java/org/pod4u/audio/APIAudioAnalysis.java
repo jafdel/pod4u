@@ -15,7 +15,7 @@ public class APIAudioAnalysis extends AudioAnalysis {
     @JsonCreator
     public APIAudioAnalysis(@JsonProperty("danceability") float danceability, @JsonProperty("instrumentalness") float instrumentalness, @JsonProperty("liveness") float liveness, @JsonProperty("speechiness") float speechiness, @JsonProperty("key") int key, @JsonProperty("mode") int mode, @JsonProperty("acousticness") float acousticness, @JsonProperty("valence") float valence, @JsonProperty("energy") float energy, @JsonProperty("loudness") float loudness, @JsonProperty("id") String id) {
         this.spid = id;
-        super(danceability, instrumentalness, liveness, speechiness, (float)(((key+1)/2) + (6*mode)), acousticness, valence, energy, loudness);
+        super(danceability, instrumentalness, liveness, speechiness, (((float)(((key+1)/2) + (((key+12)/12)*(6*mode)))) + 0.5f) * 8f, acousticness, valence, energy, loudness);
     }
 
     public String getSpId() {

@@ -40,7 +40,7 @@ public class MoodGenerator {
             IO.println(response.body());
             this.mood = deserialiser.deserialiseMood(response.body());
         } catch(Exception e) {
-            IO.println(e);
+            IO.println(e + " in MoodGenerator.uploadPhoto");
         }
     }
 

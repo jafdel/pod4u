@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd466f6-a377-44b8-8bda-92322905c1ad" name="Changes" comment="Reinstate README.md">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pod4u.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/pod4u.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/account/SpotifyAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/account/SpotifyAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/audio/APIAudioAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/audio/APIAudioAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/audio/MBAudioAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/audio/MBAudioAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/mood/Mood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/mood/Mood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/mood/MoodGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/mood/MoodGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pod4u/serialisation/MoodDeserialiser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pod4u/serialisation/MoodDeserialiser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +52,6 @@
                 <item name="pod4u" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="pod4u" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build setup" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -83,7 +88,7 @@
     &quot;accountId&quot;: &quot;4f6228e2-bf6b-41eb-b909-39b4b9066082&quot;
   }
 }</component>
-  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\Brian\.gradle\wrapper\dists\gradle-9.5.0-all\aca6g93cdtcf0oapcfka748qh\gradle-9.5.0" javaHome="C:\Users\Brian\.jdks\openjdk-25.0.2" gradleVersion="9.5.0" />
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\Brian\.gradle\wrapper\dists\gradle-9.5.0-bin\bvnork1r7n8i6kp5cnkibsc9q\gradle-9.5.0" javaHome="C:\Users\Brian\.jdks\openjdk-25.0.2" gradleVersion="9.5.0" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -107,6 +112,7 @@
     &quot;Gradle.pod4u [:org.pod4u.app.HelloApplication.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.pod4u [:org.pod4u.app.Launcher.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.pod4u [:org.pod4u.app.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.pod4u [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.pod4u [wrapper].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
@@ -119,7 +125,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brian/pod4u&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brian/pod4u/pod4u&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -142,7 +148,7 @@
       <recent name="org.pod4u" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.pod4u [wrapper]">
+  <component name="RunManager" selected="Gradle.pod4u [build]">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.pod4u.app.HelloApplication" />
       <module name="pod4u.main" />
@@ -184,6 +190,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="pod4u [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
     <configuration name="pod4u [wrapper]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -212,10 +243,12 @@
     <list>
       <item itemvalue="Application.HelloApplication" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.pod4u [build]" />
       <item itemvalue="Gradle.pod4u [wrapper]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.pod4u [build]" />
         <item itemvalue="Gradle.pod4u [wrapper]" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.HelloApplication" />
@@ -303,7 +336,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java</url>
-          <line>35</line>
+          <line>38</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -313,7 +346,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/serialisation/MoodDeserialiser.java</url>
-          <line>19</line>
+          <line>20</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -326,33 +359,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
-          <line>212</line>
+          <line>231</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
-          <line>240</line>
+          <line>257</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/account/SpotifyAccount.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
-          <line>238</line>
+          <line>255</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-databind/3.1.3/4010dd33c337ee86407051b36bd14ad0c10824b6/jackson-databind-3.1.3-sources.jar!/tools/jackson/databind/deser/bean/BeanDeserializer.java</url>
           <line>708</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.3/ee46cc2c284a8779697db79e493cca8e12769e19/jackson-core-3.1.3-sources.jar!/tools/jackson/core/JsonParser.java</url>
@@ -409,12 +432,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
-          <line>180</line>
+          <line>197</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
-          <line>241</line>
+          <line>258</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -424,7 +447,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/account/Authenticator.java</url>
-          <line>91</line>
+          <line>96</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -434,7 +457,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
-          <line>138</line>
+          <line>139</line>
           <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -444,22 +467,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
-          <line>128</line>
+          <line>129</line>
           <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
-          <line>135</line>
+          <line>136</line>
           <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/playlist/PlaylistGenerator.java</url>
-          <line>133</line>
+          <line>134</line>
           <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/pod4u/app/Pod4UController.java</url>
-          <line>205</line>
+          <line>223</line>
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

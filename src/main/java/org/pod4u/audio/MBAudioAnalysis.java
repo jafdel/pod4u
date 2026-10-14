@@ -15,7 +15,7 @@ public class MBAudioAnalysis extends AudioAnalysis {
     @JsonCreator
     public MBAudioAnalysis(@JsonProperty("danceable") float danceability, @JsonProperty("instrumental") float instrumentalness, @JsonProperty("ambient") float ambience, @JsonProperty("spe") float speech, @JsonProperty("tonal") float tonality, @JsonProperty("bright") float timbre, @JsonProperty("acoustic") float acousticness, @JsonProperty("happy") float valence, @JsonProperty("aggressive") float aggression, @JsonProperty("replay_gain") float loudness, @JsonProperty("musicbrainz_recordingid") String id) {
         this.mbid = id;
-        super(danceability, instrumentalness, ambience, speech, (((tonality+0.5f)%2) * timbre) * 12f, acousticness, valence, aggression, loudness);
+        super(danceability, instrumentalness, ambience, speech, (tonality + timbre) * 50, acousticness, valence, aggression, loudness);
     }
 
     public String getMBID() {

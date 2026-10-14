@@ -118,3 +118,4 @@ The following features are planned for future releases:
 * Playback for final playlists - at present the functionality is mainly for the purposes of demonstrating how the playlists are created and what the results might look like
 * Other means, besides photo uploads, of telling pod4u your mood (namely a direct camera interaction, a series of sliders in the UI and a randomiser function)
 * Logout function (i.e. disconnecting from the Spotify account and returning to the home screen)
+* Progress bar to show that the app hasn't crashed when using a large music library - it's just that there may be API rate limits coming into effect

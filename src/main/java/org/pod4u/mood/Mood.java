@@ -43,13 +43,13 @@ public class Mood {
         IO.println(this.fear);
         this.expressiveness = stain / 100;
         IO.println(this.expressiveness);
-        float leftTotal = 0, rightTotal = 0, status = Float.parseFloat(eyeStatus.toString().split("=")[2].split(",")[0]) + Float.parseFloat(eyeStatus.toString().split("=")[5].split(",")[0]) + Float.parseFloat(eyeStatus.toString().split("=")[9].split(",")[0]) + Float.parseFloat(eyeStatus.toString().split("=")[12].split(",")[0]);
-        for (int i=2; i<7; i++) {
+        float leftTotal = 0, rightTotal = 0, status = (Float.parseFloat(eyeStatus.toString().split("=")[2].split(",")[0]) + Float.parseFloat(eyeStatus.toString().split("=")[5].split(",")[0]) + Float.parseFloat(eyeStatus.toString().split("=")[9].split(",")[0]) + Float.parseFloat(eyeStatus.toString().split("=")[12].split(",")[0])) / 100;
+        for (int i=4; i<7; i++) {
             leftTotal += (float)Math.pow((float)Math.pow(Float.parseFloat(eyeGaze.toString().replace("={", "=").split("=")[i].replace("}, ", ",").split(",")[0])*100, 2f), 1f/2f);
             rightTotal += (float)Math.pow((float)Math.pow(Float.parseFloat(eyeGaze.toString().replace("={", "=").split("=")[i+6].replace("}}", ",").split(",")[0])*100, 2f), 1f/2f);
         }
-        this.clarity = (1200 - leftTotal - rightTotal - status) / 100;
-        IO.println(this.clarity);
+        this.clarity = (1200 - ((leftTotal+rightTotal) * status)) / 12;
+        IO.println("(1200 - ((" + leftTotal + "+" + rightTotal + ") * " + status + ")) / 12 = " + this.clarity);
         this.calm = mouthClosed / 100;
         IO.println(this.calm);
         this.joy = smile / 100;
