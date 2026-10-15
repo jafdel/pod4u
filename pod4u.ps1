@@ -1,22 +1,8 @@
 param([string]$DefaultDistro = "", [string]$Username = (& (Get-Command $DefaultDistro).path --default-user), [string]$JFXModulePath = "")
-Get-Content .env | ForEach-Object {
-  $line = $_.Trim()
-  if ($line -match '^\s*#') { return }
-  if ($line -match '^\s*$') { return }
-  if ($line -eq "" -or $line.StartsWith("#")) { return }
-  $parts = $line.Split("=", 2)
-  if ($parts.Count -ne 2) {
-    Write-Warning "Skipping invalid line ($line) - there must be only one equals sign"
-    return
-  }
-  $name = $parts[0].Trim()
-  $value = $parts[1].Trim()
-  [System.Environment]::SetEnvironmentVariable($name, $value)
-}
-$env:SPOTIFY_CLIENT_ID="changeme"
-$env:SPOTIFY_SECRET="changeme"
-$env:CODE_CHALLENGE="changeme"
-$env:CODE_VERIFIER="changeme"
+$env:SPOTIFY_CLIENT_ID="3dfb5f06677b4d969639eb63d03198ba"
+$env:SPOTIFY_SECRET="c6c958ec1dcab4704b74c8eb4f276a51f"
+$env:CODE_CHALLENGE="sEoWbvOj2lgo47wNQHp3vw4q3RIvON9TC9zpy-wH6r4"
+$env:CODE_VERIFIER="qSHYzskR3Tka2BB0EQu.EQm5eNlZUW8yYdKFhOkh1Qtrs4-TY6OWamguNDjwlACXWYEp8YbO-rCV530v53AN5MdQ_x5sxLZHihZQRtLEmr.XOQOSpxWzu8oR1WB1XUGJ"
 $env:FACE_PLUS_API_KEY="NVV3iKMu16Ea306RzqvPStvO6py4ZGHw"
 $env:FACE_PLUS_API_SECRET="ND_ejH8jr-pxzA5a-EoRFGiSboWSzkMy"
 $env:ACOUSTICBRAINZ_TOKEN="UfWt7DATnmK9md2QX0hEDiY94Hc4OlPm8vI3tLUf"
